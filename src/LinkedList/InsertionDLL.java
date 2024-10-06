@@ -52,7 +52,7 @@ public class InsertionDLL {
         }
     }
 
-    private static Node4 insertBefKele(Node4 head, int k, int val) {
+    private static Node4 insert_Bef_K_ele(Node4 head, int k, int val) {
         if (k == 1) {
             return insertBefHead(head, val);
         } else {
@@ -121,7 +121,7 @@ public class InsertionDLL {
         head = insertBefHead(head, 34);
         System.out.println("Insert at head:");
         print(head);
-        head = insertBefKele(head, 2, 22);
+        head = insert_Bef_K_ele(head, 2, 22);
         System.out.println("Insert before 2nd element:");
         print(head);
         head = insertBefNode(head, head.next.next, 212);

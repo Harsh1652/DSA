@@ -1,8 +1,7 @@
 package Maths;
 
 public class CountDigits {
-    public CountDigits() {
-    }
+
 
     static int count(int n) {
         int count;
@@ -20,6 +19,7 @@ public class CountDigits {
 
     public static void main(String[] args) {
         int n = 7789;
+        System.out.println(String.valueOf(n).length());
         System.out.println(count1(n));
         System.out.println(count(n));
     }

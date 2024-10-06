@@ -1,8 +1,7 @@
 package Strings;
 
 public class AnagramString {
-    public AnagramString() {
-    }
+
 
     public static boolean checkAnagram(String str1, String str2) {
         if (str1.length() != str2.length()) {

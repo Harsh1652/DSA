@@ -3,26 +3,26 @@ package Maths;
 public class CheckPallindrome {
 
 
-    static void pallindromeNo(int n) {
+    static boolean pallindromeNo(int n) {
         int rev = 0;
-
-        int dup;
+        int dup = n;
         int lastDigit;
-        for(dup = n; n > 0; rev = rev * 10 + lastDigit) {
-            lastDigit = n % 10;
-            n /= 10;
+        while (dup > 0){
+            lastDigit = dup % 10;
+            rev = rev * 10 + lastDigit;
+            dup/=10;
         }
 
-        if (dup == rev) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
-
+        return rev == n;
     }
 
     public static void main(String[] args) {
-        int n = 7667;
-        pallindromeNo(n);
+        int n = 1661;
+        if(pallindromeNo(n)){
+            System.out.println("This no is Pallindrome");
+        }
+        else {
+            System.out.println("Not a Pallindrome no");
+        }
     }
 }

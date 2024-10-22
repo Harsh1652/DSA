@@ -1,7 +1,6 @@
 package LinkedList;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 class Node23{
@@ -13,7 +12,7 @@ class Node23{
         this.next = null;
     }
 }
-public class MergeSortedList {
+public class MergeKSortedList {
 
 
     /*
@@ -107,38 +106,37 @@ public class MergeSortedList {
         public int compare(Node23 n1, Node23 n2) {
             return n1.data - n2.data;
         }
+    }
 
-        public static Node23 mergeKSortedLists(ArrayList<Node23> lists) {
-            if (lists.isEmpty()) {
-                return null;
-            }
-
-            PriorityQueue<Node23> minHeap = new PriorityQueue<>(new NodeComparator());
-
-            for (Node23 list : lists) {
-                if (list != null) {
-                    minHeap.add(list);
-                }
-            }
-
-            Node23 dummy = new Node23(-1);
-            Node23 current = dummy;
-
-            while (!minHeap.isEmpty()) {
-                Node23 smallest = minHeap.poll();
-                current.next = smallest;
-                current = current.next;
-
-                if (smallest.next != null) {
-                    minHeap.add(smallest.next);
-                }
-            }
-
-            return dummy.next;
-
-            // TC - k * log k + N * k * log k
-            // SC - O(K)
+    public static Node23 mergeKSortedLists(ArrayList<Node23> lists) {
+        if (lists.isEmpty()) {
+            return null;
         }
+        PriorityQueue<Node23> minHeap = new PriorityQueue<>(new NodeComparator());
+
+        for (Node23 list : lists) {
+            if (list != null) {
+                minHeap.add(list);
+            }
+        }
+
+        Node23 dummy = new Node23(-1);
+        Node23 current = dummy;
+
+        while (!minHeap.isEmpty()) {
+            Node23 smallest = minHeap.poll();
+            current.next = smallest;
+            current = current.next;
+
+            if (smallest.next != null) {
+                minHeap.add(smallest.next);
+            }
+        }
+
+        return dummy.next;
+
+        // TC - k * log k + N * k * log k
+        // SC - O(K)
     }
 }
 

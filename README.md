@@ -8,6 +8,12 @@ Java
 
 # Topics Covered
 1) Arrays: Solutions for problems involving array manipulation, searching, sorting, subarrays, and other operations.
+
 2) Strings: Handling string-based problems such as pattern matching, substring searching, and string manipulations.
+
 3) Recursion: Problems that involve solving complex issues using recursive algorithms.
+
 4) Linked Lists: Solutions covering singly and doubly linked lists, including problems like reversal, merging, and detecting cycles.
+
+5) Stacks and Queues: Implementation and problem-solving involving stacks (e.g., balanced parentheses, next greater element) and queues (e.g., circular queue, sliding window   
+   problems).

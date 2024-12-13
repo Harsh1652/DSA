@@ -1,4 +1,4 @@
-package Arraysss;
+package Arrayss;
 
 import java.util.Arrays;
 
@@ -10,10 +10,10 @@ public class Leader {
         int[] output = new int[n];
         int j = 0;
 
-        for(int i = n - 1; i >= 0; --i) {
+        for(int i = n - 1; i >= 0; i--) {
             if (arr[i] > max) {
                 output[j] = arr[i];
-                ++j;
+                j++;
             }
 
             max = Math.max(max, arr[i]);

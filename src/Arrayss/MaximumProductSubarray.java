@@ -3,8 +3,6 @@
 package Arrayss;
 
 public class MaximumProductSubarray {
-    public MaximumProductSubarray() {
-    }
 
     public static int SubArrayMaxProduct(int[] arr) {
         int prefix = 1;

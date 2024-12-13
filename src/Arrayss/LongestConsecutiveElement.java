@@ -17,16 +17,16 @@ public class LongestConsecutiveElement {
                 set.add(a[i]);
             }
 
-            Iterator var8 = set.iterator();
+            Iterator num = set.iterator();
 
             while(true) {
                 int it;
                 do {
-                    if (!var8.hasNext()) {
+                    if (!num.hasNext()) {
                         return longest;
                     }
 
-                    it = (Integer)var8.next();
+                    it = (Integer)num.next();
                 } while(set.contains(it - 1));
 
                 int cnt = 1;

@@ -3,8 +3,7 @@ package Arrayss;
 import java.util.Arrays;
 
 public class MaxItem {
-    public MaxItem() {
-    }
+
 
     public static int max(int[] arr) {
         int max = Integer.MIN_VALUE;

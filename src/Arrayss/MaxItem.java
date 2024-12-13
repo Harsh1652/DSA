@@ -7,11 +7,11 @@ public class MaxItem {
 
     public static int max(int[] arr) {
         int max = Integer.MIN_VALUE;
-        int[] var2 = arr;
-        int var3 = arr.length;
+        int[] arr1 = arr;
+        int n = arr.length;
 
-        for(int var4 = 0; var4 < var3; ++var4) {
-            int value = var2[var4];
+        for(int i = 0; i < n; i++) {
+            int value = arr1[i];
             if (value > max) {
                 max = value;
             }

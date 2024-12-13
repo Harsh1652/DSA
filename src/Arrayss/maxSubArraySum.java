@@ -1,8 +1,7 @@
 package Arrayss;
 
 public class maxSubArraySum {
-    public maxSubArraySum() {
-    }
+
 
     public static long maxSubArraySum(int[] arr, int n) {
         long max = Long.MIN_VALUE;

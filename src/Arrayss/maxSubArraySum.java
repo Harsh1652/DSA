@@ -2,7 +2,7 @@ package Arrayss;
 
 public class maxSubArraySum {
 
-
+/*
     public static long maxSubArraySum(int[] arr, int n) {
         long max = Long.MIN_VALUE;
         long sum = 0L;
@@ -40,11 +40,30 @@ public class maxSubArraySum {
         System.out.println("]");
         return max;
     }
+ */
+
+    static int maxSubArraySum (int [] num){
+        int maxSum = Integer.MIN_VALUE;
+        int currentSum = 0;
+
+        for (int i = 0; i < num.length; i++){
+            currentSum += num[i];
+
+            if (currentSum > maxSum){
+                maxSum = currentSum;
+            }
+            if (currentSum < 0){
+                currentSum = 0;
+            }
+        }
+        return maxSum;
+    }
 
     public static void main(String[] args) {
         int[] arr = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int n = arr.length;
-        long maxSum = maxSubArraySum(arr, n);
+        //long maxSum = maxSubArraySum(arr, n);
+        int maxSum = maxSubArraySum(arr);
         System.out.println("The maximum subarray sum is: " + maxSum);
     }
 }

@@ -1,5 +1,5 @@
 package Stack_Queue;
-
+/*
 class Queue{
     private int arr[];
     private int start, end, currSize, maxSize;
@@ -64,6 +64,8 @@ class Queue{
         return currSize;
     }
 }
+
+ */
 public class Queue_Impl_Array {
     public static void main(String[] args) {
 

@@ -1,5 +1,5 @@
 package Stack_Queue;
-
+/*
 class QueueNode{
     int val;
     QueueNode next;
@@ -60,5 +60,10 @@ class Queue{
         }
     }
 }
+
+ */
 public class Queue_Impl_LL {
 }
+
+// TC - O(1)
+// SC - O(1)

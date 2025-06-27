@@ -1,5 +1,5 @@
 package Stack_Queue;
-
+/*
 class stack{
     int size = 1000;
     int[] arr = new int[size];
@@ -24,6 +24,7 @@ class stack{
         return top+1;
     }
 }
+ */
 
 
 public class Stack_Impl_Array {

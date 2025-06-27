@@ -1,5 +1,5 @@
 package Stack_Queue;
-
+/*
 class Stack{
 
     private class stackNode{
@@ -57,8 +57,12 @@ class Stack{
         System.out.println();
     }
 }
+ */
 public class Stack_Impl_LL {
     public static void main(String[] args) {
 
     }
 }
+
+// TC - O(1)
+// SC - O(1)

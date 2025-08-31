@@ -36,4 +36,7 @@ public class DelteGivenNode {
         t.next = t.next.next;
         return;
     }
+
+    //  TC - O(1)
+    // SC - O(1)
 }

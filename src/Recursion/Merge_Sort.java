@@ -38,8 +38,5 @@ public class Merge_Sort {
             merge(arr, low, mid, high);
         }
     }
-
-    
-
     
 }

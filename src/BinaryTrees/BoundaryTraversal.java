@@ -5,6 +5,7 @@ import java.util.ArrayList;
 class TreeNode {
     int val;
     TreeNode left, right;
+    public int hd;
 
     TreeNode(int val) {
         this.val = val;
